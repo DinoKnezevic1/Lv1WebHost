@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+header {
+  display: flex;
+  margin: 0 auto;
+  gap: 2em;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+}
+
+.logo img{
+    height: 40px;
+}
+
+nav {
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 500;
+}
+
+nav a {
+  color: #1c1e53;
+  font-size: 16px;
+}
+nav a.active {
+  color: #5e3bee;
+}
+
+.contact {
+  color: #5e3bee;
+  padding: 18px 40px;
+  border: 1.5px solid #5e3bee;
+  border-radius: 6px;
+  font-weight: 500;
+}
