@@ -1,23 +1,32 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
-header {
+.navbar-container {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  padding: 24px 0;
+  background-color: #ffffff;
+}
+
+.navbar {
   display: flex;
+  flex-direction: row;
   margin: 0 auto;
   gap: 2em;
   justify-content: space-between;
   align-items: center;
-  width: 85%;
+  width: 90%;
 }
 
-.logo img{
-    height: 40px;
+.logo img {
+  height: 40px;
 }
 
 nav {
-  width: 500px;
   display: flex;
   justify-content: space-evenly;
   font-weight: 500;
@@ -26,6 +35,8 @@ nav {
 nav a {
   color: #1c1e53;
   font-size: 16px;
+  text-decoration: none;
+  padding: 0px 20px;
 }
 nav a.active {
   color: #5e3bee;
@@ -37,4 +48,482 @@ nav a.active {
   border: 1.5px solid #5e3bee;
   border-radius: 6px;
   font-weight: 500;
+}
+.contact:hover {
+  background-color: #5e3bee;
+  color: white;
+  cursor: pointer;
+}
+
+.button {
+  color: #ffffff;
+  background: #5e3bee;
+  border: 1.5px solid transparent;
+  border-radius: 6px;
+  padding: 18px 20px;
+  text-align: center;
+  max-width: 150px;
+  font-size: 16px;
+  margin-top: 54px;
+}
+.socialButton {
+  background: #e62872;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 12px;
+  color: #ffffff;
+  padding: 22px;
+  width: 200px;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.socialButton img {
+  width: 32px;
+}
+
+header {
+  margin-top: 105px;
+  background-color: #f5fcff;
+  width: 100%;
+}
+.headerContainer {
+  color: #282938;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding: 130px 0px;
+  align-items: center;
+  margin: 0 auto;
+}
+.header-left {
+  /* margin-top: 230px; */
+  flex: 45%;
+}
+
+.header-left span {
+  color: #5e3bee;
+}
+
+.header-left p {
+  font-size: 24px;
+}
+
+.bigText {
+  font-size: 74px;
+  font-weight: 700;
+  margin: 22px 0px;
+}
+.middleText {
+  font-size: 32px;
+  color: #282938;
+  font-weight: 700;
+}
+.smallText {
+  font-weight: 600;
+  font-size: 24px;
+}
+.descText {
+  font-size: 24px;
+  color: #282938;
+}
+
+.header-right {
+  flex: 55%;
+  height: auto;
+}
+.header-right img {
+  width: 100%;
+}
+
+.skills {
+  background-color: #ffffff;
+  color: #282938;
+  padding: 140px 80px;
+}
+
+.skillContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skillBox {
+  background-color: #f5fcff;
+  padding: 32px;
+  flex-basis: 20%;
+}
+.skillBox img {
+  width: 80px;
+  background-color: #ffffff;
+  padding: 14px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.skillText {
+  font-size: 22px;
+  color: #282938;
+}
+
+.about {
+  padding: 140px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-left {
+  flex-basis: 50%;
+}
+.about-left img {
+  width: 100%;
+}
+.about-right {
+  flex-basis: 45%;
+}
+
+#Portfolio {
+  padding: 140px 80px;
+}
+
+.portfolioHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viewDribble {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 32px;
+  padding-bottom: 12px;
+}
+.viewDribble img {
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+}
+.viewDribble p {
+  font-size: 14px;
+  color: #282938;
+  font-weight: 600;
+}
+
+.portBoxContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portBox {
+  flex-basis: 32%;
+  background: #ffffff;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+}
+.portBox img:not(.viewDribble img) {
+  width: 100%;
+}
+.portText {
+  padding: 32px 32px 0px 32px;
+}
+
+.testimonials {
+  padding: 140px 80px;
+  background-color: #f5fcff;
+}
+.testContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.testBox {
+  padding: 42px;
+  flex-basis: 30%;
+  color: #282938;
+  border: 1.5px solid #006b6a;
+  border-radius: 8px;
+}
+.testBox img {
+  height: 40px;
+}
+.testBox .clientBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+}
+
+.testBox p {
+  margin: 32px 0px;
+}
+
+.clientBox .clientInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+.clientInfo .clientName {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+}
+.clientInfo .clientFirm {
+  font-size: 16px;
+  padding-top: 4px;
+  margin: 0px;
+}
+.contactContainer {
+  color: #282938;
+  padding: 140px 0px;
+  width: 55%;
+  margin: 0 auto;
+}
+#boldText {
+  font-weight: 600;
+  font-size: 16px;
+}
+.bigTextContact {
+  font-size: 58px;
+  font-weight: 700;
+}
+#descContact {
+  font-size: 18px;
+}
+.contactText {
+  text-align: center;
+}
+
+.formBoxContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.formField {
+  flex-basis: 48%;
+  font-size: 16px;
+}
+input[type="text"],
+select {
+  width: 100%;
+  border: 1.5px solid #5e3bee;
+  border-radius: 8px;
+  height: 48px;
+  margin-top: 10px;
+  margin-bottom: 32px;
+}
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+textarea {
+  border: 1.5px solid #5e3bee;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-align: start;
+  resize: none;
+  padding: 16px;
+  color: #505050;
+  font-size: 16px;
+}
+.checkboxContainer {
+  font-size: 14px;
+  margin-top: 32px;
+}
+.contactForm .button {
+  margin: 0 auto;
+  width: 170px;
+  margin-top: 32px;
+}
+.contactForm .button:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f5fcff;
+}
+footer nav {
+  width: unset;
+}
+footer .navbar a {
+  padding: 0 30px;
+  font-size: 16px;
+}
+
+.footerContainer {
+  width: 90%;
+  padding: 100px 0px;
+  margin: 0 auto;
+}
+.socials img {
+  height: 24px;
+}
+.credits {
+  margin: 100px auto;
+  width: 90%;
+}
+.credits hr {
+  margin-bottom: 42px;
+}
+.credContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#credits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#credits a {
+  text-decoration: none;
+  color: #282938;
+}
+#credits a:nth-child(2) {
+  padding: 0px 16px;
+}
+
+@media screen and (max-width: 1400px) {
+  footer .navbar a {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  .testBox {
+    padding: 22px;
+  }
+  .skillBox {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-container {
+    position: static;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar nav {
+    text-align: center;
+    flex-direction: column;
+  }
+  .navbar nav a {
+    padding: 12px 0px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .navbar .contact {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  header {
+    margin-top: 50px;
+  }
+  .headerContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .button {
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    max-width: unset;
+    width: 180px;
+  }
+  .bigText {
+    font-size: 48px;
+  }
+  .skillContainer {
+    flex-direction: column;
+  }
+  .skills-intro {
+    text-align: center;
+  }
+  .middleText {
+    font-size: 22px;
+  }
+  .skillBox p {
+    font-size: 18px;
+  }
+  .skillBox {
+    padding: 8px;
+    margin: 12px 0;
+  }
+  .about {
+    flex-direction: column;
+    padding-top: 0px;
+  }
+  .about-right {
+    text-align: center;
+  }
+  .about-right .descText {
+    font-size: 14px;
+  }
+  .skillBox img {
+    margin: 0 75px;
+  }
+  .skillBox {
+    text-align: center;
+  }
+  .formBoxContainer {
+    flex-direction: column;
+  }
+  .portfolioHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+  .portBoxContainer {
+    flex-direction: column;
+    margin-top: 24px;
+  }
+  .portText .descText {
+    font-size: 14px;
+  }
+  .portText {
+    padding-top: 0px;
+  }
+  .portBox {
+    margin-top: 24px;
+  }
+  .testimonials {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .testContainer {
+    flex-direction: column;
+  }
+  .testBox {
+    padding: 8px;
+    margin-top: 24px;
+  }
+  .testBox img {
+    height: 20px;
+  }
+  .testBox p {
+    font-size: 14px;
+    margin: 12px 0px;
+  }
+  .testBox .clientBox {
+    display: block;
+  }
+  .clientBox img {
+    height: 64px;
+  }
+  .contactContainer {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .testBox {
+    padding: 8px;
+  }
 }
